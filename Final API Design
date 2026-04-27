@@ -1,0 +1,12 @@
+POST   /auth/register
+POST   /auth/login
+
+POST   /account/deposit
+POST   /account/withdraw
+POST   /account/transfer
+
+GET    /account/balance/{id}
+GET    /account/transactions/{id}
+
+GET    /admin/accounts
+GET    /admin/transactions

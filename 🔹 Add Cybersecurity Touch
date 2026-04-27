@@ -1,0 +1,7 @@
+This is what will make your repo different:
+
+Hash passwords (don’t store plain text)
+Add login attempt limits
+Validate all inputs
+Simulate fraud detection rules
+Log transactions

@@ -1,0 +1,7 @@
+Secure Endpoint
+@GetMapping("/balance/{id}")
+public ResponseEntity<?> getBalance(@PathVariable String id,
+    @RequestHeader("Authorization") String token) {
+
+    // Validate token before allowing access
+}

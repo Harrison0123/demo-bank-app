@@ -1,0 +1,27 @@
+demo-bank-app/
+│
+├── src/
+│   ├── controllers/
+│   │     AccountController.java
+│   │     TransactionController.java
+│   │
+│   ├── services/
+│   │     AccountService.java
+│   │     TransactionService.java
+│   │
+│   ├── models/
+│   │     Account.java
+│   │     Transaction.java
+│   │
+│   ├── repository/
+│   │     AccountRepository.java
+│   │
+│   └── main/
+│         Application.java
+│
+├── database/
+│     schema.sql
+│
+├── README.md
+├── .gitignore
+└── pom.xml (if using Spring Boot)

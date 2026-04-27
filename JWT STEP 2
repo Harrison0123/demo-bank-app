@@ -1,0 +1,9 @@
+Step 2: Generate Token
+public String generateToken(String username) {
+    return Jwts.builder()
+        .setSubject(username)
+        .setIssuedAt(new Date())
+        .setExpiration(new Date(System.currentTimeMillis() + 86400000))
+        .signWith(SignatureAlgorithm.HS256, "secretKey")
+        .compact();
+}

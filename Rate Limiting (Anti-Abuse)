@@ -1,0 +1,10 @@
+Use Bucket4j
+Bucket bucket = Bucket4j.builder()
+    .addLimit(Bandwidth.simple(5, Duration.ofMinutes(1)))
+    .build();
+
+if (bucket.tryConsume(1)) {
+    // allow request
+} else {
+    throw new RuntimeException("Too many requests");
+}

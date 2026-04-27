@@ -1,0 +1,4 @@
+@GetMapping("/admin/all-accounts")
+public List<Account> getAllAccounts() {
+    // Only ADMIN should access this
+}

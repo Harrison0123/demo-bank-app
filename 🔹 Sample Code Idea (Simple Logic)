@@ -1,0 +1,28 @@
+Account Model
+
+public class Account {
+    private String accountNumber;
+    private String name;
+    private double balance;
+}
+
+Deposit Logic
+public void deposit(String accountNumber, double amount) {
+    Account acc = repository.find(accountNumber);
+    acc.setBalance(acc.getBalance() + amount);
+}
+
+Withdraw Logic (with security thinking)
+public void withdraw(String accountNumber, double amount) {
+    Account acc = repository.find(accountNumber);
+
+    if (amount > acc.getBalance()) {
+        throw new RuntimeException("Insufficient funds");
+    }
+
+    if (amount > 100000) {
+        throw new RuntimeException("Suspicious transaction flagged");
+    }
+
+    acc.setBalance(acc.getBalance() - amount);
+}

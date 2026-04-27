@@ -1,0 +1,7 @@
+Use JSON Web Token to protect your endpoints.
+🔹 Step 1: Add dependency (Spring Boot)
+<dependency>
+  <groupId>io.jsonwebtoken</groupId>
+  <artifactId>jjwt</artifactId>
+  <version>0.11.5</version>
+</dependency>
